@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Img Share</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+<div class="container">
+  <ul class="nav">
+
+      <a class="navbar-brand" href="/">
+        <img src="/public/img/logo.png" alt="logo.png" >
+
+      </a>
+
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+
+  </ul>
+</div>
+  </nav>
+  <div class="container p-4">
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+            {{{  body }}}
+
+      </div>
+
+      <div class="col-md-4">
+
+        {{>stats this}}
+         {{>popular this}}
+         {{>comments this}}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+ <footer class="bg-dark text-white">
+   <div class="container p-2">
+     <div class="row">
+       <div class="mx-auto text-center">
+         <p>Exercise | &copy; Copyright 2019, All rights reserved</p>
+         <p>
+           <i class="fas fa-twitter-square fa-2x"></i>
+           <i class="fas fa-facebook-square fa-2x"></i>
+         </p>
+       </div>
+     </div>
+   </div>
+ </footer>
+
+
+
+
+  <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <script src="/public/js/scripts.js" charset="utf-8"></script>
+
+
+
+
+
+
+
+</body>
+</html>
